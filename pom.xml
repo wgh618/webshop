@@ -21,7 +21,7 @@
         <druid.version>1.0.18</druid.version>
         <jstl.version>1.2</jstl.version>
         <servlet-api.version>3.1.0</servlet-api.version>
-        <jsp-api.version>2.3</jsp-api.version>
+        <jsp-api.version>2.3.1</jsp-api.version>
         <commons-lang3.version>3.4</commons-lang3.version>
         <commons-io.version>2.5</commons-io.version>
         <commons-net.version>3.6</commons-net.version>
@@ -57,7 +57,7 @@
                 <version>${commons-lang3.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.commons</groupId>
+                <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>${commons-io.version}</version>
             </dependency>
@@ -148,11 +148,11 @@
                 <version>${spring.version}</version>
             </dependency>
             <!--Spring测试:提供junit与mock测试功能-->
-            <dependency>
+            <!--<dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-test</artifactId>
-                <version>${srping.version}</version>
-            </dependency>
+                <version>${spring.version}</version>
+            </dependency>-->
             <!--Spring框架包 end-->
 
             <!--Alibaba Druid连接池-->
@@ -197,7 +197,7 @@
 
             <!--Servlet、JSP相关-->
             <dependency>
-                <groupId>jstl</groupId>
+                <groupId>javax.servlet</groupId>
                 <artifactId>jstl</artifactId>
                 <version>${jstl.version}</version>
             </dependency>
@@ -208,8 +208,8 @@
                 <scope>provided</scope>
             </dependency>
             <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>jsp-api</artifactId>
+                <groupId>javax.servlet.jsp</groupId>
+                <artifactId>javax.servlet.jsp-api</artifactId>
                 <version>${jsp-api.version}</version>
                 <scope>provided</scope>
             </dependency>

@@ -23,74 +23,63 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>${spring.version}</version>
         </dependency>
         <!--Spring context：继承Spring core，事务处理、国际化、资源装载、数据校验-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>${spring.version}</version>
         </dependency>
         <!--Spring Bean工厂与bean的装配-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <version>${spring.version}</version>
         </dependency>
         <!--Spring web:继承Spring context，提供servlet监听器的context和web应用的上下文，即IOC容器-->
         <!--对现有web框架，如jsf、tapestry、struts2、spring MVC提供集成-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>${spring.version}</version>
         </dependency>
         <!--Spring MVC-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>${spring.version}</version>
         </dependency>
         <!--Spring AOP：面向切面编程-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
-            <version>${spring.version}</version>
         </dependency>
         <!--Spring对jdbc的支持-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>${spring.version}</version>
         </dependency>
         <!--Spring集成AspectJ-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
-            <version>${spring.version}</version>
         </dependency>
         <!--Spring集成orm框架-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
-            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
-            <version>${spring.version}</version>
         </dependency>
         <!--Spring表达式语言-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-expression</artifactId>
-            <version>${spring.version}</version>
         </dependency>
         <!--Spring测试:提供junit与mock测试功能-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-            <version>${srping.version}</version>
-        </dependency>
+            <scope>test</scope>
+        </dependency>-->
         <!--Spring框架包 end-->
     </dependencies>
 </project>
