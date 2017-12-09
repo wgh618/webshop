@@ -14,8 +14,9 @@
 
     <modules>
         <module>webshop-manager-domain</module><!--领域对象模块-->
-        <module>webshop-manager-mapper</module>
-        <module>webshop-manager-service</module>
+        <module>webshop-manager-mapper</module><!--mapper模块-->
+        <module>webshop-manager-service</module><!--service模块-->
+        <module>webshop-manager-web</module><!--web模块-->
     </modules>
 
     <dependencies>
