@@ -261,16 +261,16 @@
                 </configuration>
             </plugin>
         </plugins>
-        <pluginManagement>
+       <!-- <pluginManagement>
             <plugins>
-                <!-- 配置Tomcat插件 -->
+                &lt;!&ndash; 配置Tomcat插件 &ndash;&gt;
                 <plugin>
                     <groupId>org.apache.tomcat.maven</groupId>
                     <artifactId>tomcat8-maven-plugin</artifactId>
                     <version>3.0-r1756463</version>
                 </plugin>
             </plugins>
-        </pluginManagement>
+        </pluginManagement>-->
     </build>
 
 </project>
