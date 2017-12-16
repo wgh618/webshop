@@ -10,7 +10,7 @@
 
 	<context:annotation-config/>
 	<!-- 扫描包加载Service实现类 -->
-	<context:component-scan base-package="com.will.webshop.manager.service"></context:component-scan>
+	<context:component-scan base-package="com.will.webshop.service"></context:component-scan>
 
 	<!-- 启用缓存注解功能，这个是必须的，否则注解不会生效(此处使用cache，但也可以task，但是task无cache高效) -->
 	<cache:annotation-driven cache-manager="cacheManager"/>
