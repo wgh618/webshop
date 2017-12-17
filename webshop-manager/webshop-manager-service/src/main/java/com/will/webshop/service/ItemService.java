@@ -1,5 +1,6 @@
 package com.will.webshop.service;
 
+import com.will.webshop.common.pojo.EesyUiDataGridResult;
 import com.will.webshop.domain.WsItem;
 
 /**
@@ -16,4 +17,12 @@ public interface ItemService {
      * @return
      */
     WsItem getItemById(long itemId);
+
+    /**
+     * 查询全部商品（分页）
+     * @param page
+     * @param rows
+     * @return
+     */
+    EesyUiDataGridResult listAllItem(int page, int rows);
 }

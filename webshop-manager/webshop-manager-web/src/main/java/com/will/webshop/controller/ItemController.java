@@ -1,5 +1,6 @@
 package com.will.webshop.controller;
 
+import com.will.webshop.common.pojo.EesyUiDataGridResult;
 import com.will.webshop.domain.WsItem;
 import com.will.webshop.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,5 +26,11 @@ public class ItemController {
     @ResponseBody
     public WsItem getItemById(@PathVariable Long itemId) {
         return itemService.getItemById(itemId);
+    }
+
+    @RequestMapping("/item/list")
+    @ResponseBody
+    public EesyUiDataGridResult getItemList(Integer page, Integer rows) {
+        return itemService.listAllItem(page, rows);
     }
 }
