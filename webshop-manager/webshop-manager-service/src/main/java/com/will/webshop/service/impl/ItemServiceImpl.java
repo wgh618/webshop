@@ -3,6 +3,8 @@ package com.will.webshop.service.impl;
 import com.will.webshop.domain.WsItem;
 import com.will.webshop.mapper.WsItemMapper;
 import com.will.webshop.service.ItemService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,8 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class ItemServiceImpl implements ItemService {
+
+    private static final Logger logger = LoggerFactory.getLogger(ItemServiceImpl.class);
     @Autowired
     private WsItemMapper wsItemMapper;
 

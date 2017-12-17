@@ -12,7 +12,7 @@ import com.will.webshop.domain.WsItem;
 public interface ItemService {
     /**
      * 根据主键获取商品
-     * @param id
+     * @param itemId
      * @return
      */
     WsItem getItemById(long itemId);
